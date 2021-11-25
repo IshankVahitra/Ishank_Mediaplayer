@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/audioImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAudioName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/tvAudioDesc"
+        app:layout_constraintStart_toEndOf="@id/audioImage"
+        app:layout_constraintTop_toTopOf="@id/audioImage"
+        tools:text="Day 1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAudioDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/audioImage"
+        app:layout_constraintStart_toEndOf="@id/audioImage"
+        app:layout_constraintTop_toBottomOf="@id/tvAudioName"
+        tools:text="Day 1 Savitri Ghyan Yagna 418" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_play_circle_filled_24"
+        app:layout_constraintBottom_toBottomOf="@id/audioImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/audioImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>
